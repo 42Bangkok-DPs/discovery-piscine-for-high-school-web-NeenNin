@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <button type="button" id="myButton" onclick="ChangeColor();increaseFn()">
+            Click me!
+        </button>
+
+        <script>
+            function RandomColor() {
+                const letters ="0123456789ABCDEF" ;
+                let color = "#";
+                for (let i = 0; i < 6; i ++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            function ChangeColor() {
+                document.body.style.backgroundColor = RandomColor();
+            }
+
+            function increaseFn() {
+            var btn = document.getElementById("myButton");
+            var currwidth = btn.clientWidth;
+            var currheight = btn.clientHeight;
+            btn.style.width = (currwidth + 20) + "px";
+            btn.style.height = (currheight + 10) + "px";
+            }
+        </script>
+    </body>
+</html>
