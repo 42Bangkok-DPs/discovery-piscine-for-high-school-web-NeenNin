@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong);
+
+*{
+    margin: 0;
+    padding: auto;
+    
+    font-family: "Audiowide", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+/* Basic background image */
+body {
+    background-image: url('image\ \(4\).webp');
+  }
+  
+  /* Background image with additional styling */
+  body {
+    background-image: url('image\ \(4\).webp');
+    background-repeat: no-repeat;          /* Prevents image repetition */
+    background-size: cover;                /* Covers the whole area, crops if needed */
+    background-position: center center;    /* Centers the image in the viewport */
+    background-attachment: fixed;          /* Fixes the image in place for a parallax effect */
+  }
+  body {
+    font-size: 28px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+    text-align: center;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+  .name{
+    color: white;
+    font-size: 80px;
+    padding-top: 80px;
+    padding-left: 400px;
+  }
+
+  .about{
+    color: white;
+    font-size: 60px;
+    padding-top: 100px;
+    padding-left: 1100px;
+  }
